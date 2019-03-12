@@ -1,0 +1,348 @@
+sshtml, body, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+ 	font-weight:normal;
+	padding: 0;
+	border: 0;
+	font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1; background:#FFF; font:normal 400 11px Arial, Helvetica, sans-serif; ;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img { border:0; }
+h1, h2, h3 { margin:0; padding:0; font-weight:700; font-family:Arial, Helvetica, sans-serif; color:#000; }
+h1 > span:first-child { color:#FFF; } /*Usado para títulos de dos colores*/
+
+/* Generales */
+html, body { margin:0; padding:0px; }
+body { background:#FFF; color:#66522D; font:normal 400 11px Arial, Helvetica, sans-serif; }
+form { margin:0px; padding:0px; }
+input, textarea, select { outline:none; background:#FFF; border:solid 1px #CCC; font:normal 400 13px Arial, Helvetica, sans-serif; text-align: center; }
+input.error, select.error, textarea.error { border:solid 1px #E5AA11 !important; }
+input[type="checkbox"]{ border:none; }
+p { margin:0px; padding:0px; }
+a, a:link, a:visited { color:#66522D; text-decoration:none; cursor:pointer; font-weight:700; }
+a:hover, a:active { color:#000; text-decoration: none; }
+img { border:0; }
+h1, h2, h3 { margin:0; padding:0; font-weight:700; font-family:Arial, Helvetica, sans-serif; color:#000; }
+h1 > span:first-child { color:#FFF; } /*Usado para títulos de dos colores*/
+
+
+/* General Header y Footer */
+#header { width:100%; min-width:956px; height:60px; margin:0 auto; position:relative; background:#FAB927; border-bottom: 5px solid #FFFFFF;  outline: #1D3B6E solid 3px }
+#header > .title { font: normal 700 29px 'Roboto Condensed', sans-serif; color:#FFF; padding:10px 20px; float:left; }
+#logo { background:#FFFFFF; padding:10px 20px 30px; position:absolute; right:0; top:0; z-index:999;}
+@media ( max-width : 992px) {
+	.imgLogin {
+		text-align: left !important;
+	}
+	
+	.contenedorLogin{
+		display:flex;
+        flex-flow: column;
+	}
+	.contenedorLogin .imgLogin {
+		order:2;
+	}
+	.contenedorLogin .formLogin{
+		order:1;
+	}
+}
+
+#sesion { background:#1D3B6E; line-height:20px; font: normal 400 12px 'Roboto Condensed', sans-serif; color:#FFF; padding:5px 10px; overflow:hidden; }
+#sesion > .usuario { font: normal 300 14px 'Roboto Condensed', sans-serif; background:url(../../images/general_vinieta_02.png) no-repeat right center; float:left; padding:0 15px 0 0; }
+#sesion > .nombre, #sesion > .numero { line-height:20px; border-right:#FFFFFF solid 1px; float:left; padding:0 8px;}
+#sesion > .sucursal { line-height:20px; float:left; padding:0 10px;}
+#sesion > a { background:#016699; color:#FFF; padding:3px 5px; margin:0 290px 0 0; float:right; }
+#sesion > a:hover { background:#939598; }
+
+/* Bienvenida */
+#bienvenida { background:#1D3B6E; line-height:20px; font-weight: bold; font: 400 12px 'Roboto Condensed', sans-serif; color:#FFF; padding:5px 10px; overflow:hidden; }
+#bienvenida > nombre { line-height:20px; float:left; padding:0 0px;}
+
+div#imgPedidoN{ width:100%; height:100%; background:url(resources/images/1.png) no-repeat; margin-top: 25px; margin-right: 10px; cursor: pointer;}
+#imgPedidoN:hover { width:100%; height:100%; background:url(../../images/1_1.png) no-repeat; margin-top: 25px; margin-right: 10px; cursor: pointer;}
+
+#imgPedidoR{ width:100%; height:100%; background:url(../../images/5.png) no-repeat; margin-top: 25px; margin-right: 10px; cursor: pointer;}
+#imgPedidoR:hover { width:100%; height:100%; background:url(../../images/5_5.png) no-repeat; margin-top: 25px; margin-right: 10px; cursor: pointer;}
+
+#imgCerrarP{ width:100%; height:100%; background:url(../../images/2.png) no-repeat; margin-top: 25px; cursor: pointer;}
+#imgCerrarP:hover { width:100%; height:100%; background:url(../../images/2_2.png) no-repeat; margin-top: 25px; cursor: pointer;}
+
+#imgHistorialP{ width:100%; height:100%; background:url(../../images/3.png) no-repeat; margin-top: 25px; cursor: pointer;}
+#imgHistorialP:hover { width:100%; height:100%; background:url(../../images/3_3.png) no-repeat; margin-top: 25px; cursor: pointer;}
+
+#imgSucursales{ width:100%; height:100%; background:url(../../images/4.png) no-repeat; margin-top: 25px; cursor: pointer;}
+#imgSucursales:hover { width:100%; height:100%; background:url(../../images/4_4.png) no-repeat; margin-top: 25px; cursor: pointer;}
+/* Fin bienvenida */
+
+/* Tutoriales */
+
+.tutorialunselected {padding-top: 5px; font-weight: bold; font-size: 14px; color:#1D3B6E; width: 100%; height: 28px; background: url(../../images/tutounselected.png) no-repeat; background-position-x: left; padding-left: 30px; cursor: pointer;}
+.tutorialselected {padding-top: 5px; font-weight: bold; font-size: 14px; color:#1D3B6E; width: 100%; height: 28px; background: url(../../images/tutoselected.png) no-repeat; background-position-x: left; padding-left: 30px; cursor: pointer;}
+
+/* Fin Tutoriales */
+
+#footer { width:100%; height:25px; background:url(../../images/general_footer_bg_01.png) repeat-y left top #1e3c6e; clear:both; }
+
+#banner { width:200px; height:450px; background:url(../../images/banner2.gif); float:right; margin:65px 30px 10px 0px; }
+/* Botones */
+a.btn_01,button.btn_NormalB { float:right; margin:5px 8px;font-size:12px; -webkit-border-radius:5px; border-radius:5px; background:#FFFFFF; border:none; cursor:pointer; padding:3px 10px; color:#000;font-weight: bold; }
+a.btn_01:hover,button.btn_NormalB:hover { background:#FAB927; color:#FFFFFF; }
+
+
+a.btn_02,button.btn_Normal { font-size:12px;  color:#FFFFFF; -webkit-border-radius:5px; border-radius:5px; background:#1D3B6E; border:none;  cursor:pointer; padding:3px 10px; }
+a.btn_02:hover,button.btn_Normal:hover { background:#FAB927; color:#FFFFFF; }
+
+a.btn_02{ float:right; margin:5px 8px;}
+
+/*catpcha*/
+.captcha{font-size: 18px; cursor: pointer; color: #414042; background: url(../../images/fondocaptcha.jpg) no-repeat center; width: 80px; height: 40px; vertical-align:  middle; text-align: center; font-style: italic;}
+
+a.descargar { font-size:12px; float:right; color:#FFFFFF; -webkit-border-radius:7px; border-radius:9px; background:url(../../images/general_vinieta_01.png) no-repeat 10px 6px #1D3B6E; border:none; margin:5px 8px; cursor:pointer; padding:3px 25px; float:left; }
+a.descargar:hover { background:url(../../images/general_vinieta_01.png) no-repeat 10px 6px #939598; color:#FFF; }
+a.submit,button.btn_Submite { font-size:12px; float:right; color:#FFFFFF; -webkit-border-radius:7px; border-radius:9px; background:#1D3B6E; border:none; margin:5px 8px; cursor:pointer; padding:3px 10px; float:left; }
+a.submit:hover,button.btn_Submite:hover { background:#FAB927; color:#FFFFFF; }
+
+/* Menú general */
+#menu { width:145px; padding:10px 10px 10px 0; float:left; background:#E6E7E8; }
+#menu .accordion, #principal #menu .no-accordion { padding:10px 15px; background:#FFFFFF; display:block; font: normal 700 12px 'Roboto Condensed', sans-serif; color:#1D3B6E; background:#FFFFFF; border:#676767 solid 1px; cursor:pointer; }
+#menu .accordion.abierto { background:url(../../images/general_menu_vinieta_01.png) no-repeat 130px center #FFFFFF; }
+#menu .accordion.cerrado { background:url(../../images/general_menu_vinieta_01.png) no-repeat 130px center #FFFFFF; }
+#menu .accordion.activo, #principal #menu .no-accordion.activo { display:list-item!important; list-style:none!important; background:#666 url(../../images/menu_sep_01.png) repeat-x left bottom    !important; color:#FFF!important; }
+
+#menu .no-accordion.activo > a { padding-left:10px; display:list-item; list-style:none; background:url(../../images/general_flecha_03.png) no-repeat left center; font-weight:400; color:#FFF; }
+#menu .no-accordion > a { font: normal 700 12px 'Roboto Condensed', sans-serif; color:#1D3B6E; }
+
+#menu .ac_content {  background:url(../../images/general_menu_bg_01.png) repeat-x left top #FFFFFF; display:block; border-top:#676767 solid 1px; border-right:#676767 solid 1px; }
+#menu .ac_content > .general > a { font-size:10px; display:block; list-style:none; border-bottom:#676767 solid 1px; background:url(../../images/general_menu_vinieta_02.png) no-repeat 7px 6px; padding:0 0 0 18px; line-height:20px; }
+#menu .ac_content > .general > a:hover {background:url(../../images/general_menu_vinieta_03.png) no-repeat 5px 6px #125486; padding:0 0 0 18px; color:#FFFFFF; }
+#menu .ac_content > .general > a.activo {background:url(../../images/general_menu_vinieta_03.png) no-repeat 5px 6px #125486; padding:0 0 0 18px; color:#FFFFFF; }
+/* Menú general */
+
+/*Título de sección*/
+h1 { font: normal 700 19px 'Roboto Condensed', sans-serif; color:#1D3B6E; background:url(../../images/general_vinieta_02.png) no-repeat left center; padding:0 0 0 20px; }
+h2 { font: normal 700 16px 'Roboto Condensed', sans-serif; color:#1D3B6E; background:url(../../images/general_vinieta_02.png) no-repeat left center; padding:0 0 0 20px; margin:0 0 15px; }
+h3 { font: normal 400 14px 'Roboto Condensed', sans-serif; color:#1D3B6E; }
+h4 { font: italic 300 11px 'Roboto Condensed', sans-serif; color:#1D3B6E; }
+
+/*Breadcrumbs*/
+.breadcrumb { font: normal 700 12px 'Roboto Condensed', sans-serif; }
+.breadcrumb > span { padding:0 15px 0 0; line-height:20px; }
+.breadcrumb > a { background:url(../../images/general_vinieta_01.png) no-repeat right center; padding:0 15px 0 0; line-height:20px; margin:0 5px 0 0; }
+
+/*Index*/
+#index { width:955px; min-height:550px; margin:10px auto; background:url(../../images/login_img_01.jpg) no-repeat left; background-position-y: 50px; background-size: 500px;}
+#index .box { width:360px; float:right; padding:50px 50px; }
+#index h1 { font:normal 300 21px 'Roboto Condensed', sans-serif; color:#1D3B6E; line-height:32px; background:none; padding:0; }
+#index h1 > b { font:normal 700 32px 'Roboto Condensed', sans-serif; }
+#index h1 > span { font:normal 300 24px 'Roboto Condensed', sans-serif; padding:0 0 0 100px; line-height:24px; }
+
+form#formaLogin { color:#fff; margin:10px; padding:25px 12px; background:url(../../images/login_forma_bg_01.png) repeat-y;background-size: contain; -webkit-border-radius:7px; border-radius:7px; border:#0071a6 solid 2px; overflow:hidden;  }
+form#formaLogin table{font:normal normal 12px 'Roboto Condensed', sans-serif; color:#FFF;}
+form#formaLogin table td{text-align: left;}
+form#formaLogin label { font:normal normal 13px 'Roboto Condensed', sans-serif; color:#FFF; background:url(../../images/general_vinieta_01.png) no-repeat 5px 4px; padding:0 0 0 20px; clear:both; display:block; }
+form#formaLogin input {  height: 20px;/* width:137px; float:left; */ -webkit-border-radius:5px; border-radius:5px !important; /* background:#FFFFFF; border:none; margin:5px;  */}
+form#formaLogin input[type="checkbox"] { width:20px!important; float:none!important; -webkit-border-radius:5px; border-radius:5px; background:#FFFFFF; border:none; margin:5px; }
+.terminos a:link, .terminos a:visited{color: #E5AA11;}
+
+#index .box > form#frmIngreso { width:315px; margin:10px; padding:25px 12px; background:url(../../images/login_forma_bg_01.png) repeat-y; -webkit-border-radius:7px; border-radius:7px; border:#0071a6 solid 2px; overflow:hidden;  }
+#index .box > form#frmIngreso label { font:normal normal 12px 'Roboto Condensed', sans-serif; color:#FFF; background:url(../../images/general_vinieta_01.png) no-repeat 5px 4px; padding:0 0 0 20px; clear:both; display:block; }
+#index .box > form#frmIngreso input { width:145px; float:left; -webkit-border-radius:5px; border-radius:5px; background:#FFFFFF; border:none; margin:5px; }
+#contenedor { width:65%; float:left; padding:10px 25px; margin:0 auto; display:table-cell; }
+#contenedorfaqs { float:left; padding:10px 300px 0px 35px; margin:0 auto; display:table-cell;}
+
+
+/*Estilo pantalla emergente*/
+
+#contenido2 {  max-width:790px; width:80%; padding:5px; margin:1px 0; overflow:hidden; !important; }
+#contenido2 .contenedor { overflow:hidden; !important; }
+#contenido2 b { font-weight:bold; color:#1D3B6E; }
+#contenido2 p { margin:10px 0; }
+
+#contenido2 .listado {  margin:15px 0; padding:0 0 15px; }
+#contenido2 .listado .title {  font:normal 700 16px 'Roboto Condensed', sans-serif; color:#1D3B6E; float:left; }
+#contenido2 .listado .cliente {  font:normal 700 11px 'Roboto Condensed', sans-serif; color:#1D3B6E; float:right; }
+
+#contenido2 form label { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_01.png) no-repeat 5px 10px; padding:0 0 0 20px; float:left; line-height:30px; }
+#contenido2 form input { width:105px; float:left; -webkit-border-radius:7px; border-radius:7px; background:#FFFFFF; border:#808184 solid 1px; margin:5px; }
+#contenido2 form select { width:120px; float:left; -webkit-border-radius:7px 0 0 7px; border-radius:7px 0 0 7px; background:#FFFFFF; border:#808184 solid 1px; margin:5px; padding:0; }
+#contenido2 .row { overflow:hidden; border-bottom:#939598 dashed 1px; padding:5px 0; }
+
+#contenido2 form .etiqueta { font:normal 400 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_03.png) no-repeat 5px 10px; padding:0 0 0 20px; line-height:30px; }
+
+/* #contenido2 .listado table { width:100%; border: black 1px solid;}
+#contenido2 .listado table tr { padding:2px 0px; }
+#contenido2 .listado table tr { background:#fff; }
+#contenido2 .listado table tr:nth-child(even) { background:#eee; }
+#contenido2 .listado table tr:hover { background-color:#fed056; }
+#contenido2 .listado table th { padding:5px; background:#404142; color:#FFF; font-size:11px; font-weight:bold; border: black 1px solid;}
+#contenido2 .listado table td { padding:5px 5px; border: black 1px solid;}
+#contenido2 .listado table td.centrado { text-align:center; }
+#contenido2 .listado table td.derecha { text-align:right; padding:0 10px; }
+#contenido2 .listado table td > .btn_02 { float:none; }
+#contenido2 .listado table tfoot td { background:#E6E7E8; font-weight:bold; }
+#contenido2 .listado table td.chica { width:100px; }
+ */
+#contenido2 form label { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_01.png) no-repeat 5px 10px; padding:0 0 0 20px; float:left; line-height:30px; }
+#contenido2 form input { width:100px; float:left; -webkit-border-radius:7px; border-radius:7px; background:#FFFFFF; border:#808184 solid 1px; margin:5px; }
+#contenido2 form select { width:100px; float:left; -webkit-border-radius:7px 0 0 7px; border-radius:7px 0 0 7px; background:#FFFFFF; border:#808184 solid 1px; margin:5px; padding:0; }
+#contenido2 .row { overflow:hidden; border-bottom:#939598 dashed 1px; padding:5px 0; }
+
+/* .catalogos table { width:100%; border-bottom:#c8c9cb dashed 1px; }
+#contenido2 .catalogos table tr { padding:2px 0px; }
+#contenido2 .catalogos table td { padding:5px; }
+#contenido2 .catalogos table td.imagen { width:100px; height:105px; }
+#contenido2 .catalogos table td > .etiqueta { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_01.png) no-repeat 5px 10px; padding:0 0 0 20px; line-height:30px; }
+#contenido2 .catalogos table td.cantidades { width:210px; }
+#contenido2 .catalogos table td.cantidades table { margin:5px; }
+#contenido2 .catalogos table td.cantidades table td { background:#E6E7E8; padding:7px 10px; border-bottom:#c8c9cb dashed 1px; }
+#contenido2 .catalogos table td.cantidades table td b { font-weight:bold; }
+#contenido2 .catalogos table td label { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_01.png) no-repeat 5px 10px; padding:0 0 0 20px; float:left; line-height:30px; }
+#contenido2 .catalogos table td input { width:50px; float:left; -webkit-border-radius:7px; border-radius:7px; background:#FFFFFF; border:#808184 solid 1px; margin:5px; text-align:center; }
+ */
+/* #contenido2 .totales { overflow:hidden; !important;}
+#contenido2 .totales .left { min-width:320px; float:left; }
+#contenido2 .totales .left .etiqueta { width:140px; font:normal 400 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_03.png) no-repeat 5px 10px; padding:0 0 0 20px; line-height:30px; float:left; }
+#contenido2 .totales .left select { width:140px; float:left; -webkit-border-radius:7px 0 0 7px; border-radius:7px 0 0 7px; background:#FFFFFF; border:#808184 solid 1px; margin:10px; padding:0; }
+#contenido2 .totales .right { width:300px; float:right; }
+#contenido2 .totales table { width:100%; background:#fee7b5; -webkit-border-radius:7px; border-radius:7px; }
+#contenido2 .totales table tr { padding:2px 0px; }
+#contenido2 .totales table th { font: normal 700 16px 'Roboto Condensed', sans-serif; color:#1D3B6E; background:url(../../images/general_vinieta_02.png) no-repeat 20px center; padding:5px 20px 5px 40px; text-align:left; border:none; }
+#contenido2 .totales table td { padding:3px 10px 3px 20px; font: normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; border-bottom:#c8c9cb solid 1px; }
+#contenido2 .totales table td.desc { color:#ED1C24; }
+#contenido2 .totales table td.totalPago { color:#1D3B6E; border:none; }
+ */
+#contenido2 .micuenta .contenedor { width:100%; }
+#contenido2 .micuenta form .etiqueta { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#1D3B6E; background:url(../../images/general_vinieta_03.png) no-repeat 5px 10px; padding:0 0 0 20px; line-height:30px; }
+#contenido2 .micuenta form .etiqueta02 { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_01.png) no-repeat 5px 10px; padding:0 0 0 20px; line-height:30px; }
+#contenido2 .micuenta .row { overflow:hidden; border-bottom:#c6cedb solid 2px; padding:5px 0; }
+#contenido2 .micuenta form input.input01 { width:98%; float:none; }
+#contenido2 .micuenta form input.input02 { width:46%; float:left; }
+#contenido2 .micuenta form input.input03 { width:46%; float:right; }
+#contenido2 .micuenta form input.input04 { width:30%; }
+#contenido2 .micuenta form select { width:25%; float:left; }
+#contenido2 .micuenta .box { width:98%; padding:1%; background:#fee7b5; overflow:hidden; }
+#contenido2 .micuenta .box > .btn_02 { margin:5px 6% 0 0;  }
+
+
+/* Principal*/
+#contenido { font-weight:bold; color:#393939; max-width:1200px; width:100%; border:#1D3B6E solid 2px; -webkit-border-radius:7px; border-radius:7px; padding:15px; margin:10px 0; }
+#contenido .contenedor { overflow:hidden; }
+#contenido b { font-weight:bold; color:#1D3B6E; }
+#contenido table { font-weight:bold; color:#000000;}
+#contenido p { margin:10px 0; }
+
+#contenido .listado {  margin:15px 0; padding:0 0 15px; }
+#contenido .listado .title {  font:normal 700 16px 'Roboto Condensed', sans-serif; color:#1D3B6E; float:left; }
+#contenido .listado .cliente {  font:normal 700 11px 'Roboto Condensed', sans-serif; color:#1D3B6E; float:right; }
+
+#contenido form label { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_01.png) no-repeat 5px 10px; padding:0 0 0 20px; float:left; line-height:30px; }
+#contenido form input { width:105px; float:left; -webkit-border-radius:7px; border-radius:7px; background:#FFFFFF; border:#808184 solid 1px; margin:5px; }
+#contenido form select { width:120px; float:left; -webkit-border-radius:7px 0 0 7px; border-radius:7px 0 0 7px; background:#FFFFFF; border:#808184 solid 1px; margin:5px; padding:0; }
+#contenido .row { overflow:hidden; border-bottom:#939598 dashed 1px; padding:5px 0; }
+
+#contenido form .etiqueta { font:normal 400 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_03.png) no-repeat 5px 10px; padding:0 0 0 20px; line-height:30px; }
+
+/* #contenido .listado table { width:100%; border: black 1px solid;}
+#contenido .listado table tr { padding:2px 0px; }
+#contenido .listado table tr { background:#fff; }
+#contenido .listado table tr:nth-child(even) { background:#eee; }
+#contenido .listado table tr:hover { background-color:#fed056; }
+#contenido .listado table th { padding:5px; background:#404142; color:#FFF; font-size:11px; font-weight:bold; border: black 1px solid;}
+#contenido .listado table td { padding:5px 5px; border: black 1px solid;}
+#contenido .listado table td.centrado { text-align:center; }
+#contenido .listado table td.derecha { text-align:right; padding:0 10px; }
+#contenido .listado table td > .btn_02 { float:none; }
+#contenido .listado table tfoot td { background:#E6E7E8; font-weight:bold; }
+#contenido .listado table td.chica { width:100px; }
+ */
+#contenido form label { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_01.png) no-repeat 5px 10px; padding:0 0 0 20px; float:left; line-height:30px; }
+#contenido form input { width:100px; float:left; -webkit-border-radius:7px; border-radius:7px; background:#FFFFFF; border:#808184 solid 1px; margin:5px; }
+#contenido form select { width:100px; float:left; -webkit-border-radius:7px 0 0 7px; border-radius:7px 0 0 7px; background:#FFFFFF; border:#808184 solid 1px; margin:5px; padding:0; }
+#contenido .row { overflow:hidden; border-bottom:#939598 dashed 1px; padding:5px 0; }
+#contenido .row .dataTables_wrapper .row{ overflow:hidden; border-bottom:none; padding:5px 0; }
+
+/* .catalogos table { width:100%; border-bottom:#c8c9cb dashed 1px; }
+#contenido .catalogos table tr { padding:2px 0px; }
+#contenido .catalogos table td { padding:5px; }
+#contenido .catalogos table td.imagen { width:100px; height:105px; }
+#contenido .catalogos table td > .etiqueta { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_01.png) no-repeat 5px 10px; padding:0 0 0 20px; line-height:30px; }
+#contenido .catalogos table td.cantidades { width:210px; }
+#contenido .catalogos table td.cantidades table { margin:5px; }
+#contenido .catalogos table td.cantidades table td { background:#E6E7E8; padding:7px 10px; border-bottom:#c8c9cb dashed 1px; }
+#contenido .catalogos table td.cantidades table td b { font-weight:bold; }
+#contenido .catalogos table td label { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_01.png) no-repeat 5px 10px; padding:0 0 0 20px; float:left; line-height:30px; }
+#contenido .catalogos table td input { width:50px; float:left; -webkit-border-radius:7px; border-radius:7px; background:#FFFFFF; border:#808184 solid 1px; margin:5px; text-align:center; }
+ */
+#resumenPago .right { width:300px; float:right; }
+#resumenPago table { width:100%; background:#fee7b5; -webkit-border-radius:7px; border-radius:7px; }
+#resumenPago table tr { padding:2px 0px; }
+#resumenPago table th { font: normal 700 16px 'Roboto Condensed', sans-serif; color:#1D3B6E; background:url(../../images/general_vinieta_02.png) no-repeat 20px center; padding:5px 20px 5px 40px; text-align:left; border:none; }
+#resumenPago table td { padding:3px 10px 3px 20px; font: normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; border-bottom:#c8c9cb solid 1px; text-align: justify;}
+#resumenPago table td.desc { color:#ED1C24; }
+#resumenPago table td.totalPago { color:#1D3B6E; border:none; }
+
+#contenido .micuenta .contenedor { width:100%; }
+#contenido .micuenta form .etiqueta { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#1D3B6E; background:url(../../images/general_vinieta_03.png) no-repeat 5px 10px; padding:0 0 0 20px; line-height:30px; }
+#contenido .micuenta form .etiqueta02 { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_01.png) no-repeat 5px 10px; padding:0 0 0 20px; line-height:30px; }
+#contenido .micuenta .row { overflow:hidden; border-bottom:#c6cedb solid 2px; padding:5px 0; }
+#contenido .micuenta form input.input01 { width:98%; float:none; }
+#contenido .micuenta form input.input02 { width:46%; float:left; }
+#contenido .micuenta form input.input03 { width:46%; float:right; }
+#contenido .micuenta form input.input04 { width:30%; }
+#contenido .micuenta form select { width:25%; float:left; }
+#contenido .micuenta .box { width:98%; padding:1%; background:#fee7b5; overflow:hidden; }
+#contenido .micuenta .box > .btn_02 { margin:5px 6% 0 0;  }
+
+/*Afiliate*/
+#afiliate { width:955px; min-height:550px; margin:10px auto; background:url(../../images/afiliate_img_01.jpg) no-repeat left 50px; }
+#afiliate h1 { text-align:right; font-size:32px; background:none; }
+#afiliate #contenido {  width:500px; border:#1D3B6E solid 2px; -webkit-border-radius:7px; border-radius:7px; padding:15px; margin:10px 0; float:right; }
+#afiliate .contenedor { width:100%; }
+#afiliate form .etiqueta { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#1D3B6E; background:url(../../images/general_vinieta_03.png) no-repeat 5px 10px; padding:0 0 0 20px; line-height:30px; }
+#afiliate form .etiqueta02 { font:normal 700 12px 'Roboto Condensed', sans-serif; color:#58595B; background:url(../../images/general_vinieta_01.png) no-repeat 5px 10px; padding:0 0 0 20px; line-height:30px; }
+#afiliate .row { overflow:hidden; border-bottom:#c6cedb solid 2px; padding:5px 0; }
+#afiliate form input.input01 { width:98%; float:none; }
+#afiliate form input.input02 { width:46%; float:left; }
+#afiliate form input.input03 { width:46%; float:right; }
+#afiliate form input.input04 { width:30%; }
+#afiliate form select { width:25%; float:left; }
+#afiliate .box { width:98%; padding:1%; background:#fee7b5; overflow:hidden; }
+#afiliate .box > .btn_02 { margin:5px 6% 0 0;  }
+
+#myDropdown { margin:15px;}
+#myDropdown img { width:70px; height:45px; vertical-align:middle; }
+/*#myDropdown a label { line-height:45px; }*/
+#myDropdown .dd-selected img { display:none; }
